@@ -6,12 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Add two numbers</title>
 </head>
 
 <body>
+    <h1 class="dark">Enter two numbers:</h1>
+    <!-- Forms contain input elements and a submit element (button) -->
+    <!-- The action is just used when you're sending the data to another computer, which we're not, so leave it blank. -->
+    <form action="">
+        <!-- We can find the form's children in JS with their name attribute. -->
+        <input name="firstNumber" type="text">
+        <input name="secondNumber" type="text">
+        <br>
+        <!-- We can set the text on this button with its value attribute. -->
+        <input type="submit" name="addBtn" value="Add">
+    </form>
+    <!-- We're giving this an id so we can find in it JS -->
+    <h2 id="totalDisplay">Total: </h2>
 
-
+    <!-- Load the js file at the bottom of the body or it won't find the elements it needed as they won't have loaded yet. -->
     <script src="js/code.js"></script>
 </body>
 
